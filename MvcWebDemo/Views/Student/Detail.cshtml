@@ -1,0 +1,50 @@
+﻿@model MvcWebDemo.Models.ViewModel.StudentViewModel
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+<fieldset>
+    <legend>StudentViewModel</legend>
+    <span style="color:red">@Model.MESSAGE</span>
+     <div class="display-label">
+         @Html.DisplayNameFor(model => model.ID)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ID)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.NAME)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.NAME)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ADDRESS)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ADDRESS)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EMAIL)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EMAIL)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TEL)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TEL)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
